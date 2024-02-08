@@ -15,3 +15,9 @@ readATL03_github.m
 
 These files were created in support of a manuscript submitted for review in November 2023:
 Eidam, E., Bisson, K., Wang, C., Walker, C., Gibbons, A. In review. ICESat-2 and ocean particulates: Building a roadmap for calculating Kd from space-based lidar photon profiles. 
+
+February 2024 additions:
+- example_guassfit.m
+- apir_nc_example.mat
+The .m file provides an example (using photon data in apir_nc_example.mat) of how to use the built-in Matlab "fit" function (with "gauss4" option) to decompose the binned photon data into afterpulse peaks, impulse response peak, and residual decay curve. As noted in the manuscript, this method is NOT recommended for various reasons including potential misalignment with data from other sites. It should also be noted that the example data used here (from North Carolina; see notes in .m file) isn't necessarily the "best" idealized dataset for representing the afterpulses and impulse response. ICESat-2 project personnel have used data from salt flats in Bolivia, but these were not available at the time this code was developed because the OpenAltimetry platform was being migrated to a new system and track lines were not loading.
+
